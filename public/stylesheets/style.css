@@ -1,0 +1,35 @@
+body {
+    font-family: 'Segoe UI', SegoeUI, 'Microsoft JhengHei', 微軟正黑體, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.banner {
+    position: relative;
+    z-index: -1;
+    margin: -2px;
+    height: 200px;
+    background: #dddddd center center url('https://images.unsplash.com/photo-1453738773917-9c3eff1db985?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+    background-size: 60%;
+    filter: blur(1px);
+}
+
+.search-bar .search-bar-outer {
+    margin: 0 auto;
+    max-width: 580px;
+    background-color: #274029;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: 0;
+    margin-top: -20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar .search-bar-inner h4 {
+    color: #C8AE70;
+}
+
+.img_people img {
+    width: 360px;
+    height: 240px;
+}

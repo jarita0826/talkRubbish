@@ -1,0 +1,51 @@
+<!-- search bar -->
+<div class="container search-bar">
+  <div class="search-bar-outer">
+    <div class="search-bar-inner">
+      <h4 class="mb-2 text-center">你想對誰講幹話?</h4>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container mt-4">
+  <form method="POST" action="/">
+    <div class="row img_people">
+      <div class="col-12 col-md-12 col-lg-4 card p-2" style="width: 18rem;">
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+          class="card-img-top img-fluid rounded mx-auto d-block" alt="...">
+        <div class="card-body text-center">
+          <input type="radio" id="engineer" name="role" value="工程師">
+          <label for="engineer">工程師</label>
+        </div>
+      </div>
+      <div class="col-12 col-md-12 col-lg-4 card p-2" style="width: 18rem;">
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+          class="card-img-top img-fluid rounded mx-auto d-block" alt="...">
+        <div class="card-body text-center">
+          <input type="radio" id="designer" name="role" value="設計師">
+          <label for="designer">設計師</label>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-12 col-lg-4  card p-2" style="width: 18rem;">
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+          class="card-img-top img-fluid rounded mx-auto d-block" alt="...">
+        <div class="card-body text-center">
+          <input type="radio" id="entrepreneur" name="role" value="創業家">
+          <label for="entrepreneur">創業家</label>
+        </div>
+      </div>
+    </div>
+    <div class="row m-2 p-0 justify-content-end">
+
+      <button type="submit" class="btn btn-success col-2 m-1 p-0">產生幹話</button>
+      <textarea class="form-control col-9" rows="2">
+      {{#if answer}}
+      {{answer}}
+      {{/if}}
+    </textarea>
+    </div>
+  </form>
+</div>
